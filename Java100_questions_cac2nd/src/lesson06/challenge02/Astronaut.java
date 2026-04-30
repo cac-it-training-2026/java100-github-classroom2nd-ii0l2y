@@ -47,8 +47,12 @@ public class Astronaut {
 		String airStr = br.readLine();
 		int air = Integer.parseInt(airStr);
 
+		Spaceship ship = new Spaceship();
+		ship.setAir(air);
 		//ここに適切な処理を記述する。
-		System.out.println(air + "リットルの空気が入りました。");
+
+		System.out.println(ship.getAir() + "リットルの空気が入りました。");
+
 	}
 
 }
